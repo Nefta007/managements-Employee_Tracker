@@ -1,5 +1,7 @@
 const inquirer = require('inquirer');
 //const fs = require('fs');
+const management = require('./lib/employerAction');
+const connect = require('./config/connection');
 
 const init = () => {
     inquirer
@@ -18,8 +20,10 @@ const init = () => {
                 ],
             }
         ]).then((answers) => {
-            let {usreChoice} = answers;
-            console.log(usreChoice);
+            const {user_choice} = answers;
+            // console.log(user_choice);
+            management(user_choice);
+            //init();
 
         })
 }
