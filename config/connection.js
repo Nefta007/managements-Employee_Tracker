@@ -9,5 +9,5 @@ const userConnect = mysql.createConnection({
     database: 'curr_employee'
 });
 
-userConnect.connect();
+//userConnect.connect();
 module.exports = userConnect;
