@@ -11,6 +11,7 @@ const init = () => {
                 name: 'user_choice',
                 message: 'What would you like to do?',
                 choices: [
+                    "View all departments",
                     "View all roles",
                     "View all employees",
                     "Add a department",
