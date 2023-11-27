@@ -15,5 +15,9 @@
     "console.table": "^0.10.0",
     "inquirer": "^8.0.0",
     "mysql2": "^3.6.5"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }
