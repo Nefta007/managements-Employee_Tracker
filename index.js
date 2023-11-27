@@ -16,16 +16,16 @@ const init = () => {
                     "Add a department",
                     "Add a role",
                     "Add an employee",
-                    "Update an employee role"
+                    "Update an employee role",
+                    "Quit"
                 ],
             }
         ]).then((answers) => {
-            const {user_choice} = answers;
+            let { user_choice } = answers;
             // console.log(user_choice);
             management(user_choice);
-            //init();
-
         })
+
 }
 
 init();
